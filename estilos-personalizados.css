@@ -1,0 +1,92 @@
+
+body {
+    background-color: #fff0f3 !important; /* Fondo rosa pálido ultra suave de la captura */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    margin: 0;
+    padding: 20px;
+}
+
+/* CONTENEDOR BLANCO DEL CONTENIDO */
+.container, main, .contenido-principal {
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(226, 27, 90, 0.05) !important;
+    border: 1px solid #fcd1dd !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* BANNER PRINCIPAL GRANATE/FUCSIA */
+header, .banner-fucsia {
+    background-color: #e21b5a !important; /* El fucsia brillante idéntico al tuyo */
+    color: #ffffff !important;
+    text-align: center;
+    padding: 45px 20px;
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+header h1, .banner-fucsia h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+header p, .banner-fucsia p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+/* BARRA DE NAVEGACIÓN ROSA PASTEL */
+nav {
+    background-color: #f5b5cf !important; /* El rosa pastel de tu barra */
+    border-radius: 16px !important;
+    padding: 12px 20px !important;
+    margin-bottom: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important; /* Espacio ordenado entre cada opción */
+    align-items: center !important;
+}
+
+nav a {
+    color: #ffffff !important; /* Texto totalmente blanco */
+    text-decoration: none !important; /* ¡Adiós línea azul de abajo! */
+    font-weight: 600 !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important; /* Hace que cada uno tenga forma de píldora al pasar el mouse */
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+}
+/* ENLACES DE LA NAV */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* PESTAÑA ACTIVA (Botón "Inicio" Blanco con letras fucsias) */
+nav a.pestana-activa {
+    background-color: #ffffff !important; /* Fondo blanco limpio */
+    color: #e21b5a !important; /* Letras fucsias como tu captura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 20px !important; /* Bordes súper redondeados, no cuadrados */
+}
+
+/* TÍTULOS DE LOS PASOS (Textos en Fucsia) */
+h2, h3, .text-fucsia {
+    color: #e21b5a !important; 
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* IMÁGENES CON BORDES REDONDEADOS */
+img {
+    border-radius: 14px !important;
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}

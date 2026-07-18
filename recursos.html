@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Contacto - Simulador Web</title>
+    <!-- CDN de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="text-dark">
+
+    <!-- NAVEGACIÓN SEMÁNTICA (Menú Activo en 'Recursos y Contacto') -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow" aria-label="Navegación principal del sitio">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">🌐 Simulador Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Desplegar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="simulador.html">El Simulador</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="recursos.html">Recursos y Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+        <div class="row g-5">
+            
+            <!-- COLUMNA 1: RECURSOS COMPLEMENTARIOS -->
+            <section class="col-lg-6">
+                <h1 class="display-6 fw-bold text-primary mb-4">Recursos de Aprendizaje</h1>
+                <p class="text-secondary">Potencia tus conocimientos sobre la arquitectura web con la documentación oficial utilizada para este simulador:</p>
+                
+                <!-- Lista de recursos utilizando List Groups de Bootstrap -->
+                <div class="list-group shadow-sm mb-4">
+                    <a href="https://developer.mozilla.org/es/docs/Web/Performance/How_browsers_work" target="_blank" class="list-group-item list-group-item-action p-3" aria-label="Documentación de MDN sobre cómo funcionan los navegadores, abre en pestaña nueva">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                            <h2 class="h6 mb-1 fw-bold text-dark">MDN Web Docs</h2>
+                            <span class="badge bg-primary rounded-pill">Oficial</span>
+                        </div>
+                        <p class="mb-1 small text-secondary">Guía detallada y accesible sobre el orden de renderizado, el DOM y el CSSOM.</p>
+                    </a>
+                    <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank" class="list-group-item list-group-item-action p-3" aria-label="Pautas de Accesibilidad WCAG de la W3C, abre en pestaña nueva">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                            <h2 class="h6 mb-1 fw-bold text-dark">Pautas de Accesibilidad (WCAG)</h2>
+                            <span class="badge bg-success rounded-pill">Estándar</span>
+                        </div>
+                        <p class="mb-1 small text-secondary">Aprende más sobre cómo diseñar interfaces perceptibles, operables y comprensibles.</p>
+                    </a>
+                </div>
+
+                <!-- Tarjeta con tu imagen restante: ejemplo.png -->
+                <div class="card border-0 shadow-sm text-bg-dark">
+                    <img src="img/ejemplo.png" class="card-img opacity-50" alt="Vista de ejemplo práctico del entorno técnico del desarrollo de software">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h3 class="card-title h5 fw-bold mb-1">Práctica en Entornos Reales</h3>
+                        <p class="card-text small">Analiza las peticiones de red reales presionando F12 en tu navegador e ingresando a la pestaña 'Network'.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COLUMNA 2: FORMULARIO CON ESTILOS DEL FRAMEWORK -->
+            <section class="col-lg-6">
+                <div class="bg-white p-4 rounded border shadow-sm">
+                    <h2 class="h3 fw-bold text-dark mb-3">¿Tienes dudas? ¡Contáctanos!</h2>
+                    <p class="small text-secondary mb-4">Envíanos tus comentarios sobre el simulador técnico educativo. Todos los campos son obligatorios.</p>
+                    
+                    <form action="#" method="POST">
+                        <!-- Campo Nombre -->
+                        <div class="mb-3">
+                            <label for="campoNombre" class="form-label fw-semibold text-dark">Nombre Completo</label>
+                            <input type="text" class="form-control" id="campoNombre" placeholder="Ej. Angie Lara" required>
+                        </div>
+                        
+                        <!-- Campo Correo -->
+                        <div class="mb-3">
+                            <label for="campoEmail" class="form-label fw-semibold text-dark">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="campoEmail" placeholder="nombre@correo.com" required>
+                            <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie más.</div>
+                        </div>
+                        
+                        <!-- Campo Mensaje -->
+                        <div class="mb-4">
+                            <label for="campoMensaje" class="form-label fw-semibold text-dark">Tu Mensaje o Sugerencia</label>
+                            <textarea class="form-control" id="campoMensaje" rows="4" placeholder="Escribe aquí tu consulta sobre el funcionamiento de la web..." required></textarea>
+                        </div>
+                        
+                        <!-- Botón Enviar con Estados Focus/Hover nativos -->
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">Enviar Mensaje Informativo</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2026 Simulador Educativo Web - Rediseño de Interfaz</p>
+        </div>
+    </footer>
+
+    <!-- CDN de JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
